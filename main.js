@@ -36,6 +36,8 @@ console.log(pluginDir)
 
   });
 
+  mainWindow.webContents.openDevTools()
+
   // mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
   // mainWindow.loadUrl('file://' + __dirname + '/app/demo-easy.html');
   mainWindow.loadUrl('file://' + __dirname + '/app/PrintSample1.html');

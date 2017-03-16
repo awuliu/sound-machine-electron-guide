@@ -2,6 +2,15 @@
 
 ![Sound Machine](https://rawgithub.com/bojzi/sound-machine/master/sketch/sound-machine.png)
 
+## nw by awu 
+- v0.12.3. Is it still possible to load these NPAPI plugins 
+- There is a trick on Windows that you have to name your plugin as np*, e.g. npMyPlugin.dll, and place it to your app's plugins/ folder
+- the plugin built for x64 or x86? 64bit NW only load x64 plugins.
+  ···
+    "webkit": {
+    "plugin": false
+    }
+  ···
 
 The code I used for testing is:
 
