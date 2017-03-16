@@ -16,7 +16,7 @@ app.on('ready', function() {
     configuration.saveSettings('shortcutKeys', ['ctrl', 'shift']);
   }
 
-const pluginDir = path.join(__dirname, 'plugins')
+const pluginDir = path.join(__dirname, 'Lodop')
 
 console.log(pluginDir)
 
@@ -27,27 +27,18 @@ console.log(pluginDir)
     // resizable: false,
     'web-preferences': {
       'plugins': true
+      // 打包成 32 位才可以用，不知道为什么 64 位的不能生效，开发时也不能生效，暂时不能用于实际开发 by awu
       // 'extra-plugin-dirs': [
-      //     pluginDir,
-      //   pluginDir + 'AudioIntercom.dll',
-      //   pluginDir + 'AudioRender.dll',
-      //   pluginDir + 'D3DX9_43.dll',
-      //   pluginDir + 'ISTask.dll',
-      //   pluginDir + 'NetStream.dll',
-      //   pluginDir + 'npWebVideoKitPlugin.dll',
-      //   pluginDir + 'OpenAL32.dll',
-      //   path.join(pluginDir, 'PlayCtrl.dll'),
-      //   pluginDir + 'StreamTransClient.dll',
-      //   pluginDir + 'SuperRender.dll',
-      //   pluginDir + 'SystemTransform.dll',
-      //   pluginDir + 'WebVideoKitActiveX.ocx'
+      //   pluginDir,
+      //   path.join(pluginDir, 'NPCAOSOFT_WEB_PRINT_lodop.dll')
       // ]
     }
 
   });
 
   // mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
-  mainWindow.loadUrl('file://' + __dirname + '/app/demo-easy.html');
+  // mainWindow.loadUrl('file://' + __dirname + '/app/demo-easy.html');
+  mainWindow.loadUrl('file://' + __dirname + '/app/PrintSample1.html');
 
   setGlobalShortcuts();
 });

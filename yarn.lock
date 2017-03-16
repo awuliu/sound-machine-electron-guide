@@ -275,9 +275,9 @@ electron-packager@^5.0.1:
     rimraf "^2.3.2"
     run-series "^1.1.1"
 
-electron-prebuilt@^0.30.0:
-  version "0.30.8"
-  resolved "http://registry.npm.taobao.org/electron-prebuilt/download/electron-prebuilt-0.30.8.tgz#77ce327ac15801845ced316ae2abcdc6e5b1bf1b"
+electron-prebuilt@0.31.2:
+  version "0.31.2"
+  resolved "http://registry.npm.taobao.org/electron-prebuilt/download/electron-prebuilt-0.31.2.tgz#fd02bd84a647220e191d114e697abceb21f3eb8e"
   dependencies:
     electron-download "^1.0.0"
     extract-zip "^1.0.3"

@@ -61,3 +61,4 @@ $(function () {
 
 
 alert('node:' + process.versions.node + ', electron:' + process.versions.electron + ', chrome:' + process.versions.chrome)
+console.log(navigator.plugins)

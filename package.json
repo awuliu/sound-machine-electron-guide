@@ -5,13 +5,15 @@
   "scripts": {
     "start": "electron .",
     "package-all": "electron-packager ./ SoundMachine --all --out ~/Desktop/SoundMachine --version 0.30.2 --overwrite --icon=./app/img/app-icon.icns",
-    "package-win": "electron-packager ./ SoundMachine --platform=win32 --arch=x64 --out ./dist --version 0.30.2 --overwrite --icon=./app/img/app-icon.ico"
+    "package-win": "electron-packager ./ SoundMachine --platform=win32 --arch=x64 --out ./dist --version 0.31.2 --overwrite --icon=./app/img/app-icon.ico",
+    "package-win32": "electron-packager ./ SoundMachine --platform=win32 --arch=ia32 --out ./dist --version 0.31.2 --overwrite --icon=./app/img/app-icon.ico"
   },
   "devDependencies": {
     "electron-packager": "^5.0.1",
-    "electron-prebuilt": "^0.30.0"
+    "electron-prebuilt": "0.31.2"
   },
   "dependencies": {
     "nconf": "^0.7.2"
   }
+  
 }
